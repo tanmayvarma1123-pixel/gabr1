@@ -20,6 +20,13 @@ jobs:
       - name: Build Application
         run: npm run build
 
+      - name: Artifact upload
+        uses: action/upload-artifacts@v3
+        with:
+          name: artifact-1
+          path: |
+             package*
+
   test:
     needs: build
     runs-on: ubuntu-latest
