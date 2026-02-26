@@ -20,7 +20,6 @@ jobs:
         run: npm run build
 
   test:
-    needs: build
     runs-on: ubuntu-latest
 
     steps:
@@ -39,7 +38,6 @@ jobs:
         run: npm test
 
   deploy:
-    needs: test
     runs-on: ubuntu-latest
 
     steps:
