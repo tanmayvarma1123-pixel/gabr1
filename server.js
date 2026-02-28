@@ -5,6 +5,6 @@ app.get("/", (req, res) => {
   res.send("Hello Raham 🚀");
 });
 
-app.listen(process.env.PORT || 3000, "0.0.0.0", () => {
-  console.log("Server running on port 3000");
+app.listen(process.env.PORT || 80, "0.0.0.0", () => {
+  console.log("Server running on port 80");
 });
